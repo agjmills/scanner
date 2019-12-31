@@ -21,7 +21,7 @@ libgnutls28-dev
 libgpgme11-dev
 libgpgme-dev
 libhiredis-dev
-libical2-dev
+libical-dev
 libksba-dev
 libmicrohttpd-dev
 libnet-snmp-perl
@@ -50,8 +50,6 @@ redis-server
 redis-tools
 rsync
 smbclient
-texlive-fonts-recommended
-texlive-latex-extra
 uuid-dev
 wapiti
 wget
@@ -63,7 +61,6 @@ EOF
 # Install Node.js
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
 apt-get install nodejs -yq --no-install-recommends
-
 
 # Install Yarn
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -

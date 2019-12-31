@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:buster-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=C.UTF-8
@@ -82,22 +82,6 @@ RUN cd /build && \
     make install && \
     cd /build && \
     rm -rf *
-    
-    #
-    # Install Greenbone Security Assistant (GSA)
-    #
-    
-#RUN cd /build && \
-#    wget --no-verbose https://github.com/greenbone/gsa/archive/$gsa_version.tar.gz && \
-#    tar -zxf $gsa_version.tar.gz && \
-#    cd /build/*/ && \
-#    mkdir build && \
-#    cd build && \
-#    cmake -DCMAKE_BUILD_TYPE=Release .. && \
-#    make && \
-#    make install && \
-#    cd /build && \
-#    rm -rf *
     
     #
     # Install Greenbone Vulnerability Management Python Library
